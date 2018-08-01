@@ -1,0 +1,432 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+/***/ "./node_modules/webpack/hot sync ^\\.\\/log$":
+/*!*************************************************!*\
+  !*** (webpack)/hot sync nonrecursive ^\.\/log$ ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./log": "./node_modules/webpack/hot/log.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	var module = __webpack_require__(id);
+	return module;
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error('Cannot find module "' + req + '".');
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/webpack/hot sync ^\\.\\/log$";
+
+/***/ }),
+
+/***/ "./src/$$_lazy_route_resource lazy recursive":
+/*!**********************************************************!*\
+  !*** ./src/$$_lazy_route_resource lazy namespace object ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error('Cannot find module "' + req + '".');
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
+
+/***/ }),
+
+/***/ "./src/app/app-routing.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/*! exports provided: AppRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var routes = [
+    { path: '', redirectTo: '/', pathMatch: 'full' },
+];
+var AppRoutingModule = /** @class */ (function () {
+    function AppRoutingModule() {
+    }
+    AppRoutingModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
+        })
+    ], AppRoutingModule);
+    return AppRoutingModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.component.css":
+/*!***********************************!*\
+  !*** ./src/app/app.component.css ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/* Layout */\r\nbody {\r\n    margin: 0;\r\n    background-color: black;\r\n    counter-reset: points;\r\n  }\r\n.screen {\r\n    position: relative;\r\n    margin: 0 auto;\r\n    max-width: 100vw;\r\n    width: 75vh;\r\n    height: 100vh;\r\n    overflow: hidden;\r\n  }\r\n/* Sky */\r\n.sky {\r\n    position: absolute;\r\n    left: 0;\r\n    right: 0;\r\n    top: 0;\r\n    bottom: 0;\r\n    pointer-events: none;\r\n  }\r\n.sky > div {\r\n    position: absolute;\r\n    left: 0;\r\n    right: 0;\r\n    top: 0;\r\n    bottom: 0;\r\n  }\r\n.sky > div::before {\r\n    content: \"\";\r\n    position: absolute;\r\n    left: 0;\r\n    right: 0;\r\n    top: 0;\r\n    display: block;\r\n    height: 1000vh;\r\n  }\r\n.sky > div + div {\r\n    -webkit-animation: opacity 30s linear infinite forwards paused;\r\n            animation: opacity 30s linear infinite forwards paused;\r\n  }\r\n/* All gradients except last are from https://uigradients.com/ */\r\n.sky > div::before {\r\n    background: linear-gradient(\r\n      #f12711,\r\n      #f5af19 10%,\r\n      #91eae4 11%,\r\n      #86a8e7,\r\n      #7f7fd5 21%,\r\n      #f64f59 22%,\r\n      #c471ed,\r\n      #12c2e9 32%,\r\n      #f7797d 33%,\r\n      #fbd786,\r\n      #c6ffdd 43%,\r\n      #8a2387 44%,\r\n      #e94057,\r\n      #f27121 54%,\r\n      #3a1c71 55%,\r\n      #d76d77,\r\n      #fdbb2d 65%,\r\n      #22c1c3 66%,\r\n      #fdbb2d 76%,\r\n      #1a2a6c 77%,\r\n      #b21f1f,\r\n      #fdbb2d 87%\r\n    );\r\n    -webkit-animation: sky 240s steps(8, end) infinite forwards paused;\r\n            animation: sky 240s steps(8, end) infinite forwards paused;\r\n  }\r\n.sky > div + div::before {\r\n    background: linear-gradient(\r\n      #ff0080,\r\n      #ff8c00,\r\n      #40e0d0 10%,\r\n      #1d2671 11%,\r\n      #c33764 21%,\r\n      #78ffd6 22%,\r\n      #a8ff78 32%,\r\n      #4b1248 33%,\r\n      #f0c27b 43%,\r\n      #2980b9 44%,\r\n      #6dd5fa,\r\n      #fff 54%,\r\n      #03001e 55%,\r\n      #7303c0,\r\n      #ec38bc,\r\n      #fdeff9 65%,\r\n      #56ccf2 66%,\r\n      #2f80ed 76%,\r\n      #0c0510 77%,\r\n      #160b3e,\r\n      #5f4282,\r\n      #cecc99 87%\r\n    );\r\n    -webkit-animation: sky 240s steps(8, end) -15s infinite forwards paused;\r\n            animation: sky 240s steps(8, end) -15s infinite forwards paused;\r\n  }\r\n/* Inputs and Last Label */\r\ninput,\r\n  .last {\r\n    z-index: 1;\r\n    position: absolute;\r\n    display: none;\r\n    width: 300vh;\r\n    height: 300vh;\r\n    opacity: 0;\r\n    cursor: pointer;\r\n    pointer-events: auto;\r\n    -webkit-transform: translate(-150vh, -150vh);\r\n            transform: translate(-150vh, -150vh);\r\n    -webkit-touch-callout: none;\r\n    -webkit-tap-highlight-color: transparent;\r\n  }\r\n#last {\r\n    display: initial;\r\n    pointer-events: none;\r\n  }\r\ninput:checked,\r\n  #last:checked {\r\n    display: none !important;\r\n  }\r\n/* Base */\r\n.base {\r\n    position: relative;\r\n    left: calc(50% - 15vh);\r\n    top: 50vh;\r\n    width: 30vh;\r\n    height: 30vh;\r\n    background-color: red;\r\n    pointer-events: none;\r\n    -webkit-transform: rotateX(45deg) rotateZ(45deg);\r\n            transform: rotateX(45deg) rotateZ(45deg);\r\n    -webkit-transform-style: preserve-3d;\r\n            transform-style: preserve-3d;\r\n    transition: -webkit-transform 0.5s ease-in-out;\r\n    transition: transform 0.5s ease-in-out;\r\n    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;\r\n  }\r\n/* Base Sides */\r\n.base::before,\r\n  .base::after {\r\n    content: \"\";\r\n    z-index: -1;\r\n    position: absolute;\r\n    display: block;\r\n  }\r\n.base::before {\r\n    right: 0;\r\n    width: 50vh;\r\n    height: 100%;\r\n    background: linear-gradient(to left, #d00, rgba(221, 0, 0, 0));\r\n    -webkit-transform: rotateY(-90deg);\r\n            transform: rotateY(-90deg);\r\n    -webkit-transform-origin: right;\r\n            transform-origin: right;\r\n  }\r\n.base::after {\r\n    bottom: 0;\r\n    width: 100%;\r\n    height: 50vh;\r\n    background: linear-gradient(to top, #e00, rgba(238, 0, 0, 0));\r\n    -webkit-transform: rotateX(90deg);\r\n            transform: rotateX(90deg);\r\n    -webkit-transform-origin: bottom;\r\n            transform-origin: bottom;\r\n  }\r\n/* Containers */\r\n.container {\r\n    position: absolute;\r\n    display: flex;\r\n    -webkit-transform-style: preserve-3d;\r\n            transform-style: preserve-3d;\r\n  }\r\n.container.horizontal {\r\n    left: -45vh;\r\n    flex-direction: row;\r\n    width: calc(90vh + 100%);\r\n    height: 100%;\r\n  }\r\n.container.vertical {\r\n    top: -45vh;\r\n    flex-direction: column;\r\n    width: 100%;\r\n    height: calc(90vh + 100%);\r\n  }\r\n/* Spacers */\r\n.container::before,\r\n  .container::after {\r\n    content: \"\";\r\n  }\r\n.container.horizontal::before,\r\n  .container.horizontal::after {\r\n    max-width: calc(100% - 45vh);\r\n    min-width: 45vh;\r\n    height: 100%;\r\n  }\r\n.container.vertical::before,\r\n  .container.vertical::after {\r\n    width: 100%;\r\n    max-height: calc(100% - 45vh);\r\n    min-height: 45vh;\r\n  }\r\n/* Blocks */\r\n.block {\r\n    position: relative;\r\n    visibility: hidden;\r\n    flex-grow: 1;\r\n    background-color: currentColor;\r\n    -webkit-transform: translateZ(6vh);\r\n            transform: translateZ(6vh);\r\n    -webkit-transform-style: preserve-3d;\r\n            transform-style: preserve-3d;\r\n  }\r\n.block.horizontal {\r\n    height: 100%;\r\n  }\r\n.block.vertical {\r\n    width: 100%;\r\n  }\r\n.block.floating {\r\n    position: absolute;\r\n    display: none;\r\n    visibility: visible;\r\n  }\r\n.block.floating.horizontal {\r\n    width: calc(100% - 90vh);\r\n    -webkit-animation: left 2s linear alternate infinite both;\r\n            animation: left 2s linear alternate infinite both;\r\n  }\r\n.block.floating.vertical {\r\n    height: calc(100% - 90vh);\r\n    -webkit-animation: top 2s linear alternate infinite both;\r\n            animation: top 2s linear alternate infinite both;\r\n  }\r\n/* Block Sides */\r\n.block::before,\r\n  .block::after {\r\n    content: \"\";\r\n    z-index: -1;\r\n    position: absolute;\r\n    display: block;\r\n    background-color: currentColor;\r\n  }\r\n.block::before {\r\n    right: 0;\r\n    width: 6vh;\r\n    height: 100%;\r\n    box-shadow: inset -6vh 0 rgba(0, 0, 0, 0.2);\r\n    -webkit-transform: rotateY(-90deg);\r\n            transform: rotateY(-90deg);\r\n    -webkit-transform-origin: right;\r\n            transform-origin: right;\r\n  }\r\n.block::after {\r\n    bottom: 0;\r\n    width: 100%;\r\n    height: 6vh;\r\n    box-shadow: inset 0 -6vh rgba(0, 0, 0, 0.1);\r\n    -webkit-transform: rotateX(90deg);\r\n            transform: rotateX(90deg);\r\n    -webkit-transform-origin: bottom;\r\n            transform-origin: bottom;\r\n  }\r\n/* End Labels */\r\n.end {\r\n    position: absolute;\r\n    left: -200vh;\r\n    top: -300vh;\r\n    visibility: visible;\r\n    max-width: 400vh;\r\n    max-height: 600vh;\r\n    pointer-events: auto;\r\n    cursor: pointer;\r\n    -webkit-transform: rotateZ(-45deg) rotateX(-45deg) translateZ(100vh);\r\n            transform: rotateZ(-45deg) rotateX(-45deg) translateZ(100vh);\r\n    -webkit-touch-callout: none;\r\n    -webkit-tap-highlight-color: transparent;\r\n  }\r\n.end.horizontal {\r\n    width: calc(400vh - 100000%);\r\n    height: 600vh;\r\n  }\r\n.end.vertical {\r\n    width: 400vh;\r\n    height: calc(600vh - 100000%);\r\n  }\r\n/* Points */\r\n.points {\r\n    position: absolute;\r\n    left: 0;\r\n    right: 0;\r\n    top: 0;\r\n    display: none;\r\n    text-align: center;\r\n    color: white;\r\n    font-family: \"Helvetica\", \"Roboto\", \"Segoe UI\", \"Arial\", sans-serif;\r\n    font-size: 9vh;\r\n    font-weight: lighter;\r\n    pointer-events: none;\r\n  }\r\n.points::before {\r\n    content: \"YOU'VE REACHED THE TOP!\";\r\n    display: block;\r\n    margin: 4vh auto;\r\n    font-size: 4vh;\r\n    opacity: 0;\r\n    transition: opacity 0.25s;\r\n  }\r\n.points::after {\r\n    content: counter(points);\r\n    display: block;\r\n  }\r\n/* Start Label */\r\n.start {\r\n    position: absolute;\r\n    left: 0;\r\n    right: 0;\r\n    top: 0;\r\n    bottom: 0;\r\n    padding: 15vh 0;\r\n    text-align: center;\r\n    color: transparent;\r\n    text-shadow: 0 0 0 white;\r\n    font-family: \"Helvetica\", \"Roboto\", \"Segoe UI\", \"Arial\", sans-serif;\r\n    font-size: 9vh;\r\n    font-weight: lighter;\r\n    cursor: pointer;\r\n    transition: opacity 0.25s;\r\n    -webkit-animation: start 0.75s linear;\r\n            animation: start 0.75s linear;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n        user-select: none;\r\n    -webkit-touch-callout: none;\r\n    -webkit-tap-highlight-color: transparent;\r\n  }\r\n.start::before {\r\n    content: \"\";\r\n    position: absolute;\r\n    left: calc(50% - 3vh);\r\n    top: 59.5vh;\r\n    display: block;\r\n    border-top: 5vh solid transparent;\r\n    border-bottom: 5vh solid transparent;\r\n    border-left: 8.5vh solid white;\r\n  }\r\n.start::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    left: calc(50% - 10vh);\r\n    top: 54.5vh;\r\n    display: block;\r\n    box-sizing: border-box;\r\n    border: solid 2vh white;\r\n    border-radius: 50%;\r\n    width: 20vh;\r\n    height: 20vh;\r\n  }\r\n/* Restart Button */\r\nbutton {\r\n    position: absolute;\r\n    left: 0;\r\n    right: 0;\r\n    top: 0;\r\n    bottom: 0;\r\n    border: none;\r\n    padding-top: 80vh;\r\n    width: 100%;\r\n    color: white;\r\n    background: transparent;\r\n    opacity: 0;\r\n    pointer-events: none;\r\n    font-family: \"Helvetica\", \"Roboto\", \"Segoe UI\", \"Arial\", sans-serif;\r\n    font-size: 4vh;\r\n    font-weight: lighter;\r\n    cursor: pointer;\r\n    transition: opacity 0.25s;\r\n    -webkit-touch-callout: none;\r\n    -webkit-tap-highlight-color: transparent;\r\n  }\r\n/* Keyframes */\r\n@-webkit-keyframes opacity {\r\n    0% {\r\n      opacity: 1;\r\n    }\r\n    25% {\r\n      opacity: 1;\r\n    }\r\n    50% {\r\n      opacity: 0;\r\n    }\r\n    75% {\r\n      opacity: 0;\r\n    }\r\n    100% {\r\n      opacity: 1;\r\n    }\r\n  }\r\n@keyframes opacity {\r\n    0% {\r\n      opacity: 1;\r\n    }\r\n    25% {\r\n      opacity: 1;\r\n    }\r\n    50% {\r\n      opacity: 0;\r\n    }\r\n    75% {\r\n      opacity: 0;\r\n    }\r\n    100% {\r\n      opacity: 1;\r\n    }\r\n  }\r\n@-webkit-keyframes sky {\r\n    from {\r\n      -webkit-transform: none;\r\n              transform: none;\r\n    }\r\n    to {\r\n      -webkit-transform: translateY(-880vh);\r\n              transform: translateY(-880vh);\r\n    }\r\n  }\r\n@keyframes sky {\r\n    from {\r\n      -webkit-transform: none;\r\n              transform: none;\r\n    }\r\n    to {\r\n      -webkit-transform: translateY(-880vh);\r\n              transform: translateY(-880vh);\r\n    }\r\n  }\r\n@-webkit-keyframes width {\r\n    from {\r\n      width: 0;\r\n    }\r\n    to {\r\n      width: 90vh;\r\n    }\r\n  }\r\n@keyframes width {\r\n    from {\r\n      width: 0;\r\n    }\r\n    to {\r\n      width: 90vh;\r\n    }\r\n  }\r\n@-webkit-keyframes height {\r\n    from {\r\n      height: 0;\r\n    }\r\n    to {\r\n      height: 90vh;\r\n    }\r\n  }\r\n@keyframes height {\r\n    from {\r\n      height: 0;\r\n    }\r\n    to {\r\n      height: 90vh;\r\n    }\r\n  }\r\n@-webkit-keyframes left {\r\n    from {\r\n      left: 0;\r\n    }\r\n    to {\r\n      left: 90vh;\r\n    }\r\n  }\r\n@keyframes left {\r\n    from {\r\n      left: 0;\r\n    }\r\n    to {\r\n      left: 90vh;\r\n    }\r\n  }\r\n@-webkit-keyframes top {\r\n    from {\r\n      top: 0;\r\n    }\r\n    to {\r\n      top: 90vh;\r\n    }\r\n  }\r\n@keyframes top {\r\n    from {\r\n      top: 0;\r\n    }\r\n    to {\r\n      top: 90vh;\r\n    }\r\n  }\r\n@-webkit-keyframes color {\r\n    0% {\r\n      color: #f00;\r\n    }\r\n    19% {\r\n      color: #ff0;\r\n    }\r\n    31% {\r\n      color: #0f0;\r\n    }\r\n    43% {\r\n      color: #0ff;\r\n    }\r\n    62% {\r\n      color: #00f;\r\n    }\r\n    81% {\r\n      color: #f0f;\r\n    }\r\n    100% {\r\n      color: #f00;\r\n    }\r\n  }\r\n@keyframes color {\r\n    0% {\r\n      color: #f00;\r\n    }\r\n    19% {\r\n      color: #ff0;\r\n    }\r\n    31% {\r\n      color: #0f0;\r\n    }\r\n    43% {\r\n      color: #0ff;\r\n    }\r\n    62% {\r\n      color: #00f;\r\n    }\r\n    81% {\r\n      color: #f0f;\r\n    }\r\n    100% {\r\n      color: #f00;\r\n    }\r\n  }\r\n@-webkit-keyframes start {\r\n    from {\r\n      text-shadow: 0 0 1vh white, 2vh -2vh 1vh white, 2vh 2vh 1vh white,\r\n        -2vh 2vh 1vh white, -2vh -2vh 1vh white;\r\n      opacity: 0;\r\n    }\r\n    to {\r\n      text-shadow: 0 0 0 white;\r\n      opacity: 1;\r\n    }\r\n  }\r\n@keyframes start {\r\n    from {\r\n      text-shadow: 0 0 1vh white, 2vh -2vh 1vh white, 2vh 2vh 1vh white,\r\n        -2vh 2vh 1vh white, -2vh -2vh 1vh white;\r\n      opacity: 0;\r\n    }\r\n    to {\r\n      text-shadow: 0 0 0 white;\r\n      opacity: 1;\r\n    }\r\n  }\r\n/* Sky: start changing */\r\n#start:checked ~ .sky > div + div,\r\n  #start:checked ~ .sky > div::before {\r\n    -webkit-animation-play-state: running;\r\n            animation-play-state: running;\r\n  }\r\n/* Sky: stop changing */\r\n#end:checked ~ .sky > div + div,\r\n  #end:checked ~ .sky > div::before,\r\n  #last:checked ~ .sky > div + div,\r\n  #last:checked ~ .sky > div::before {\r\n    -webkit-animation-play-state: paused;\r\n            animation-play-state: paused;\r\n  }\r\n/* Base: start movement */\r\n#start:checked ~ .base {\r\n    -webkit-transform: translateY(200vh) rotateX(45deg) rotateZ(45deg);\r\n            transform: translateY(200vh) rotateX(45deg) rotateZ(45deg);\r\n    transition-duration: 60s;\r\n    transition-timing-function: linear;\r\n  }\r\n/* Base: stop movement */\r\n#end:checked ~ .base,\r\n  #last:checked ~ .base {\r\n    -webkit-transform: translateY(25vh) rotateX(45deg) rotateZ(45deg)\r\n      scale3d(0.3, 0.3, 0.3);\r\n            transform: translateY(25vh) rotateX(45deg) rotateZ(45deg)\r\n      scale3d(0.3, 0.3, 0.3);\r\n    transition-duration: 1s;\r\n    transition-timing-function: ease-in-out;\r\n  }\r\n/* Inputs and Last Label: display current */\r\n#start:checked ~ .base > input,\r\n  input:checked + .container > .block > input,\r\n  input:checked + .container > .block > .last {\r\n    display: block;\r\n  }\r\n/* Containers: start color rotation */\r\n#start:checked ~ .base .container {\r\n    -webkit-animation: color 60s linear alternate infinite both;\r\n            animation: color 60s linear alternate infinite both;\r\n  }\r\n/* Containers: stop color rotation of current */\r\n#start:checked ~ .base > .container,\r\n  input:checked + .container > .block > .container {\r\n    -webkit-animation-play-state: paused !important;\r\n            animation-play-state: paused !important;\r\n  }\r\n/* Spacers: start sizing of current */\r\n#start:checked ~ .base > .container.horizontal::before,\r\n  input:checked + .container > .block > .container.horizontal::before {\r\n    -webkit-animation: width 2s linear infinite alternate both running;\r\n            animation: width 2s linear infinite alternate both running;\r\n  }\r\n#start:checked ~ .base > .container.horizontal::after,\r\n  input:checked + .container > .block > .container.horizontal::after {\r\n    animation: width 2s linear infinite alternate-reverse both running;\r\n  }\r\n#start:checked ~ .base > .container.vertical::before,\r\n  input:checked + .container > .block > .container.vertical::before {\r\n    -webkit-animation: height 2s linear infinite alternate both running;\r\n            animation: height 2s linear infinite alternate both running;\r\n  }\r\n#start:checked ~ .base > .container.vertical::after,\r\n  input:checked + .container > .block > .container.vertical::after {\r\n    animation: height 2s linear infinite alternate-reverse both running;\r\n  }\r\n/* Spacers: stop sizing of current */\r\n#end:active ~ .base .container::before,\r\n  #end:active ~ .base .container::after,\r\n  #end:checked ~ .base .container::before,\r\n  #end:checked ~ .base .container::after,\r\n  #last:active ~ .base .container::before,\r\n  #last:active ~ .base .container::after,\r\n  #last:checked ~ .base .container::before,\r\n  #last:checked ~ .base .container::after,\r\n  input:active + .container::before,\r\n  input:active + .container::after,\r\n  input:checked + .container::before,\r\n  input:checked + .container::after {\r\n    -webkit-animation-play-state: paused !important;\r\n            animation-play-state: paused !important;\r\n  }\r\n/* Floating Blocks: display current */\r\n#start:checked ~ .base > .container > .floating,\r\n  input:checked + .container > .block > .container > .floating {\r\n    display: block;\r\n  }\r\n/* Floating Blocks: stop movement of current */\r\n#end:active ~ .base .floating,\r\n  #last:active ~ .base .floating,\r\n  input:active + .container > .floating {\r\n    -webkit-animation-play-state: paused;\r\n            animation-play-state: paused;\r\n  }\r\n/* Floating Blocks: stop movement of current then fadeout */\r\n#end:checked ~ .base .floating,\r\n  #last:checked ~ .base .floating,\r\n  input:checked + .container > .floating {\r\n    visibility: hidden;\r\n    color: transparent;\r\n    transition: color 0.5s, background-color 0.5s, visibility 0s 0.5s;\r\n    -webkit-animation-play-state: paused;\r\n            animation-play-state: paused;\r\n  }\r\n/* Increment Points */\r\n#last:checked ~ .base .floating,\r\n  input:checked + .container > .floating {\r\n    counter-increment: points 1;\r\n  }\r\n/* Floating Block Sides: stop sizing of current then fadeout */\r\n#end:checked ~ .base .floating::before,\r\n  #end:checked ~ .base .floating::after,\r\n  #last:checked ~ .base .floating::before,\r\n  #last:checked ~ .base .floating::after,\r\n  input:checked + .container > .floating::before,\r\n  input:checked + .container > .floating::after {\r\n    visibility: hidden;\r\n    opacity: 0;\r\n    transition: opacity 0.5s, visibility 0s 0.5s;\r\n    -webkit-animation-play-state: paused;\r\n            animation-play-state: paused;\r\n  }\r\n/* Blocks: show current  */\r\ninput:checked + .container > .floating + .block,\r\n  #last:checked ~ .base .last + .container > .floating + .block {\r\n    visibility: visible;\r\n  }\r\n/* Points: show only positive */\r\n.screen:valid .points {\r\n    display: block;\r\n  }\r\n/* Points: top reached */\r\n#last:checked ~ .points::before {\r\n    opacity: 1;\r\n  }\r\n/* Start Label: hide after started */\r\n#start:checked ~ .start {\r\n    pointer-events: none;\r\n    opacity: 0;\r\n    -webkit-animation: none;\r\n            animation: none;\r\n  }\r\n/* Restart Button: show on end */\r\n#end:checked ~ button,\r\n  #last:checked ~ button {\r\n    pointer-events: auto;\r\n    opacity: 1;\r\n  }\r\n  "
+
+/***/ }),
+
+/***/ "./src/app/app.component.html":
+/*!************************************!*\
+  !*** ./src/app/app.component.html ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-navbar></app-navbar>"
+
+/***/ }),
+
+/***/ "./src/app/app.component.ts":
+/*!**********************************!*\
+  !*** ./src/app/app.component.ts ***!
+  \**********************************/
+/*! exports provided: AppComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var AppComponent = /** @class */ (function () {
+    function AppComponent() {
+        this.title = 'app';
+    }
+    AppComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-root',
+            template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
+            styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
+        })
+    ], AppComponent);
+    return AppComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.module.ts":
+/*!*******************************!*\
+  !*** ./src/app/app.module.ts ***!
+  \*******************************/
+/*! exports provided: AppModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! .//app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _content_content_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./content/content.component */ "./src/app/content/content.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+var AppModule = /** @class */ (function () {
+    function AppModule() {
+    }
+    AppModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            declarations: [
+                _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
+                _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_3__["NavbarComponent"],
+                _content_content_component__WEBPACK_IMPORTED_MODULE_5__["ContentComponent"],
+            ],
+            imports: [
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"]
+            ],
+            providers: [],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
+        })
+    ], AppModule);
+    return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/content/content.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/content/content.component.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/content/content.component.html":
+/*!************************************************!*\
+  !*** ./src/app/content/content.component.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  content works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/content/content.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/content/content.component.ts ***!
+  \**********************************************/
+/*! exports provided: ContentComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContentComponent", function() { return ContentComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ContentComponent = /** @class */ (function () {
+    function ContentComponent() {
+    }
+    ContentComponent.prototype.ngOnInit = function () {
+    };
+    ContentComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-content',
+            template: __webpack_require__(/*! ./content.component.html */ "./src/app/content/content.component.html"),
+            styles: [__webpack_require__(/*! ./content.component.css */ "./src/app/content/content.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ContentComponent);
+    return ContentComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/mock-categories.ts":
+/*!************************************!*\
+  !*** ./src/app/mock-categories.ts ***!
+  \************************************/
+/*! exports provided: CATEGORY */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CATEGORY", function() { return CATEGORY; });
+var CATEGORY = [
+    'action',
+    'horror',
+    'fiction',
+    'yaoi',
+    'shonen',
+    'seinen',
+    'shojo',
+    'josei',
+    'kodomomuke',
+];
+
+
+/***/ }),
+
+/***/ "./src/app/navbar/navbar.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/navbar/navbar.component.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/navbar/navbar.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/navbar/navbar.component.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\n  <!-- TODO: add route -->\n  <a class=\"navbar-brand\" href=\"#\">\n    <img src=\"../../assets/logo.jpg\" width=\"30\" height=\"30\" class=\"d-inline-block align-top\" alt=\"\"> Comic Palace</a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\"\n    aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item active\">\n        <!-- TODO: add route -->\n        <a class=\"nav-link\" href=\"#\">Home\n          <span class=\"sr-only\">(current)</span>\n        </a>\n      </li>\n      <li class=\"nav-item\">\n        <!-- TODO: add route -->\n        <a class=\"nav-link\" href=\"#\">Newest</a>\n      </li>\n      <li class=\"nav-item\">\n        <!-- TODO: add route -->\n        <a class=\"nav-link\" href=\"#\">Lastest</a>\n      </li>\n      <li class=\"nav-item\">\n        <!-- TODO: add route -->\n        <a class=\"nav-link\" href=\"#\">Most view</a>\n      </li>\n      <li class=\"nav-item dropdown\">\n        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\"\n          aria-expanded=\"false\">\n          Category\n        </a>\n        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\n          <!-- TODO: add route -->\n          <a class=\"dropdown-item\" href=\"#\" *ngFor=\"let cat of categories\">{{cat}}</a>\n        </div>\n      </li>\n      <li class=\"nav-item\">\n        <!-- TODO: add route -->\n        <a class=\"nav-link\" href=\"#\">About & Contact</a>\n      </li>\n    </ul>\n    <form class=\"form-inline my-2 my-lg-0\">\n      <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\n      <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Login</button>\n      <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Register</button>\n    </form>\n\n  </div>\n</nav>"
+
+/***/ }),
+
+/***/ "./src/app/navbar/navbar.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/navbar/navbar.component.ts ***!
+  \********************************************/
+/*! exports provided: NavbarComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavbarComponent", function() { return NavbarComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _mock_categories__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../mock-categories */ "./src/app/mock-categories.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var NavbarComponent = /** @class */ (function () {
+    function NavbarComponent() {
+        this.categories = _mock_categories__WEBPACK_IMPORTED_MODULE_1__["CATEGORY"];
+    }
+    NavbarComponent.prototype.ngOnInit = function () {
+        console.log(this.categories);
+    };
+    NavbarComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-navbar',
+            template: __webpack_require__(/*! ./navbar.component.html */ "./src/app/navbar/navbar.component.html"),
+            styles: [__webpack_require__(/*! ./navbar.component.css */ "./src/app/navbar/navbar.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], NavbarComponent);
+    return NavbarComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/environments/environment.ts":
+/*!*****************************************!*\
+  !*** ./src/environments/environment.ts ***!
+  \*****************************************/
+/*! exports provided: environment */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
+// This file can be replaced during build by using the `fileReplacements` array.
+// `ng build ---prod` replaces `environment.ts` with `environment.prod.ts`.
+// The list of file replacements can be found in `angular.json`.
+var environment = {
+    production: false
+};
+/*
+ * In development mode, to ignore zone related error stack frames such as
+ * `zone.run`, `zoneDelegate.invokeTask` for easier debugging, you can
+ * import the following file, but please comment it out in production mode
+ * because it will have performance impact when throw error
+ */
+// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+/***/ }),
+
+/***/ "./src/main.ts":
+/*!*********************!*\
+  !*** ./src/main.ts ***!
+  \*********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js");
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+
+
+
+
+if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].production) {
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
+}
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
+    .catch(function (err) { return console.log(err); });
+
+
+/***/ }),
+
+/***/ 0:
+/*!************************************************************************!*\
+  !*** multi (webpack)-dev-server/client?http://0.0.0.0:0 ./src/main.ts ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\QuangTV12\Desktop\QUANGTV12\comic-palace\node_modules\webpack-dev-server\client\index.js?http://0.0.0.0:0 */"./node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:0");
+module.exports = __webpack_require__(/*! C:\Users\QuangTV12\Desktop\QUANGTV12\comic-palace\src\main.ts */"./src/main.ts");
+
+
+/***/ })
+
+},[[0,"runtime","vendor"]]]);
+//# sourceMappingURL=main.js.map
